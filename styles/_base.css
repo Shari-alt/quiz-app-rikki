@@ -13,6 +13,7 @@ h1,
 h2,
 h3 {
   line-height: 1.3;
+  margin: 8px 0;
 }
 
 input,
@@ -27,24 +28,26 @@ a {
 
 .main-grid {
   display: grid;
-  grid-template-rows: [header] 1fr [main] 950px [footer] 1fr;
-  grid-template-columns: 375px;
+  grid-template-rows: [header] 60px [main] auto [footer] 60px;
+  min-width: 320px;
+  max-width: 60vw;
+  height: 100vh;
   margin: 0 auto;
-  width: 375px;
 }
 
 .grid-head {
   grid-row: header;
   background-color: rgb(155, 199, 199);
   text-align: center;
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
 }
 
 .grid-content {
   grid-row: main;
   background-color: bisque;
   display: flex;
+  overflow-y: scroll;
 }
 
 .grid-footer {
@@ -52,9 +55,14 @@ a {
   display: flex;
   flex-direction: row;
   background-color: cadetblue;
-  position: sticky;
-  bottom: 0;
+  /* position: sticky;
+  bottom: 0; */
   justify-content: space-around;
   align-items: center;
   font-size: 35px;
+}
+
+.fas,
+.far {
+  margin-top: 12px;
 }
