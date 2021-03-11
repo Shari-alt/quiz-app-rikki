@@ -44,7 +44,7 @@ a {
   text-align: center;
 }
 
-.grid-content {
+.profile {
   grid-row: main;
   background-color: rgb(213, 198, 224);
   display: flex;
@@ -69,7 +69,7 @@ a {
   margin-top: 8px;
 }
 
-.personal {
+.profile__personal {
   display: flex;
   flex-direction: row;
   width: 310px;
@@ -78,11 +78,11 @@ a {
   align-items: center;
 }
 
-.personal h3 {
+.profile__personal__name {
   margin-left: 10px;
 }
 
-.circular-image {
+.profile__personal__picture {
   padding-left: 0;
   position: relative;
   width: 150px;
@@ -91,17 +91,17 @@ a {
   border-radius: 50%;
 }
 
-.circular-image img {
+.profile__personal__picture img {
   width: 100%;
   height: auto;
 }
 
-.about {
+.profile__about {
   width: 310px;
   font-size: 14px;
 }
 
-.tags {
+.profile__tags {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -110,17 +110,17 @@ a {
   flex-wrap: wrap;
 }
 
-.skills {
+.profile__tags__item {
   border: 1px solid #91678d;
   padding: 3px 25px 1px 25px;
   border-radius: 3px;
   background-color: #91678d;
   font-size: 14px;
   margin-top: 15px;
-  box-shadow: 2px 2px 8px 3px rgb(94, 94, 94);
+  box-shadow: 3px 3px 10px 3px rgb(165, 165, 165);
 }
 
-.log-out button {
+.profile__log-out__button {
   border-radius: 20px;
   border: none;
   background-color: #c769bf;
@@ -129,7 +129,7 @@ a {
     inset 0 0 10px 5px rgb(232, 155, 255);
 }
 
-.log-out button:hover {
+.profile__log-out__button:hover {
   background-color: #cd52fd;
   cursor: pointer;
 }
