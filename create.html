@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create</title>
+    <link rel="stylesheet" href="styles/_base-create.css" />
+    <script
+      src="https://kit.fontawesome.com/e1771cc7a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-grid">
+      <header class="grid-head">
+        <h1>Create</h1>
+      </header>
+      <main class="grid-content create">
+        <form class="form">
+          <label for="question">Type in a question below</label>
+          <textarea
+            id="question"
+            placeholder="Keep the text to under 140 characters"
+            class="create__question"
+            autofocus="on"
+            maxlength="140"
+          ></textarea>
+        </form>
+        <form class="form">
+          <label for="answer">Type in the answer below</label>
+          <textarea
+            id="answer"
+            placeholder="Keep the text to under 140 characters"
+            class="create__answer"
+            maxlength="140"
+          ></textarea>
+        </form>
+        <form class="form">
+          <label for="tags">Set up to 5 tags below</label>
+          <textarea
+            id="tags"
+            placeholder="Separate your tags with commas"
+            class="create__tag"
+            maxlength="60"
+          ></textarea>
+          <input type="submit" value="Submit Question" class="create__submit" />
+        </form>
+      </main>
+
+      <footer class="grid-footer">
+        <a href="./index.html"><i class="fas fa-home"></i> </a>
+        <a href="./bookmarks.html"><i class="fas fa-bookmark"></i> </a>
+        <a href="./create.html"><i class="far fa-sticky-note"></i> </a>
+        <a href="./profile.html"><i class="fas fa-user-circle"></i> </a>
+      </footer>
+    </div>
+  </body>
+</html>

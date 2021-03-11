@@ -1,3 +1,16 @@
+:root {
+  --background-color-header: #6dc9c8;
+  --background-color-main: #f7e9e3;
+  --background-color-footer: #0e3150;
+  --background-color-cards: #ffc0c2;
+  --primary-text-color: #0e3150;
+  --primary-headline-color: #eaf6f6;
+  --button-color: #6dc9c8;
+  --button-hover-color: #0e3150;
+  --icon-color: #eaf6f6;
+  --current-icon-color: #ffc0c2;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -14,6 +27,7 @@ h2,
 h3 {
   line-height: 1.3;
   margin: 8px 0;
+  color: var(--primary-headline-color);
 }
 
 input,
@@ -23,7 +37,7 @@ button {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--primary-headline-color);
 }
 
 .main-grid {
@@ -37,13 +51,13 @@ a {
 
 .grid-head {
   grid-row: header;
-  background-color: rgb(155, 199, 199);
+  background-color: var(--background-color-header);
   text-align: center;
 }
 
 .grid-content {
   grid-row: main;
-  background-color: rgb(213, 198, 224);
+  background-color: var(--background-color-main);
   display: flex;
   flex-direction: row;
   flex-basis: 80%;
@@ -56,7 +70,7 @@ a {
   grid-row: footer;
   display: flex;
   flex-direction: row;
-  background-color: cadetblue;
+  background-color: var(--background-color-footer);
   justify-content: space-around;
   align-items: center;
   font-size: 35px;
@@ -67,23 +81,25 @@ a {
 }
 
 .question-card {
-  border: 1px solid rgb(255, 239, 251);
+  border: 1px solid var(--background-color-cards);
   width: 310px;
   height: 220px;
   position: relative;
   border-radius: 5px;
   display: grid;
   padding: 5px;
-  background-color: rgb(255, 239, 251);
+  background-color: var(--background-color-cards);
   margin-top: 20px;
+  box-shadow: inset 7px 7px 22px 5px rgba(0, 0, 0, 0.65);
 }
 
 .question-card__bookmark,
 .question-card a {
   position: absolute;
   right: 15px;
-  top: -3px;
+  top: -1px;
   font-size: 30px;
+  color: var(--background-color-footer);
 }
 
 .question-card__bookmark:hover {
@@ -102,18 +118,20 @@ a {
 
 .question-card__show-answer {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 15px auto;
   border-radius: 3px;
-  border: 1px solid rgb(138, 92, 170);
-  background-color: rgb(138, 92, 170);
+  border: 1px solid var(--button-color);
+  background-color: var(--button-color);
   padding: 5px 7px;
+  transition: 200ms ease-in-out;
+  box-shadow: 0 10px 13px -7px #000000;
 }
 
 .question-card__show-answer:hover {
   cursor: pointer;
-  background-color: rgb(92, 30, 61);
-  border: 1px solid rgb(92, 30, 61);
-  color: rgb(220, 199, 235);
+  color: var(--primary-headline-color);
+  background-color: var(--button-hover-color);
+  border: 1px solid var(--button-hover-color);
 }
 
 .question-card__tags {
