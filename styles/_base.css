@@ -71,7 +71,7 @@ a {
 .question-card {
   border: 1px solid var(--background-color-cards);
   width: 310px;
-  height: 220px;
+  height: auto;
   position: relative;
   border-radius: 5px;
   display: grid;
@@ -135,4 +135,16 @@ a {
   border: 1px solid;
   padding: 1px 25px;
   border-radius: 3px;
+}
+
+.answer {
+  text-align: center;
+  display: none;
+}
+
+.question-card__show-answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
