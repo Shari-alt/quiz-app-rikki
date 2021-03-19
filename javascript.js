@@ -30,3 +30,24 @@ for (let i = 0; i < bookmark.length; i++) {
     })
 }
 
+// Create Screen 
+
+const data = []
+const submit = document.querySelector('input');
+const form = document.querySelector('form');
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const inputQuestion = form['question'];
+    const inputAnswer = form['answer'];
+    const inputTags = form['tags'];
+    const currywurst = {
+        question: inputQuestion.value, 
+        answer: inputAnswer.value,
+        tags: inputTags.value,
+    }
+    data.push(currywurst);
+    console.log(data);
+    form.reset();
+});
+
