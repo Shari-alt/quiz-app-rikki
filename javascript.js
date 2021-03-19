@@ -51,3 +51,7 @@ form.addEventListener("submit", (event) => {
     form.reset();
 });
 
+function myFunction () {
+    let element = document.querySelector("body");
+    element.classList.toggle("dark-mode"); 
+} 
