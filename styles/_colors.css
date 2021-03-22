@@ -1,11 +1,11 @@
 :root {
-  --background-color-header: #6dc9c8;
-  --background-color-main: #f7e9e3;
-  --background-color-footer: #0e3150;
-  --background-color-cards: #ffc0c2;
+  --background-color-header: #696969;
+  --background-color-main: #F5FFFA;
+  --background-color-footer: #696969;
+  --background-color-cards: #87CEFA;
   --primary-text-color: #0e3150;
   --primary-headline-color: #eaf6f6;
-  --button-color: #6dc9c8;
+  --button-color: #F5FFFA;
   --button-hover-color: #0e3150;
   --icon-color: #eaf6f6;
   --current-icon-color: #ffc0c2;

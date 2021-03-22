@@ -1,11 +1,11 @@
 :root {
-  --background-color-header: #6dc9c8;
-  --background-color-main: #f7e9e3;
-  --background-color-footer: #0e3150;
-  --background-color-cards: #ffc0c2;
+  --background-color-header:#4682B4;
+  --background-color-main: #F5FFFA;
+  --background-color-footer:#4682B4;
+  --background-color-cards: #87CEFA;
   --primary-text-color: #0e3150;
   --primary-headline-color: #eaf6f6;
-  --button-color: #6dc9c8;
+  --button-color: #F5FFFA;
   --button-hover-color: #0e3150;
   --icon-color: #eaf6f6;
   --current-icon-color: #ffc0c2;
@@ -111,7 +111,7 @@ hr {
   width: 150px;
   height: 150px;
   overflow: hidden;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   left: 15px;
   top: 15px;
 }
@@ -170,4 +170,15 @@ hr {
 .dark-mode {
   background-color: black;
   color: white;
+}
+
+.darkmode__button {
+  border-radius: 20px;
+  border: none;
+  background-color: var(--background-color-header);
+  padding: 7px 15px;
+  box-shadow: 0 10px 13px -7px #000000;
+  transition: 200ms ease-in-out;
+}
+
 }
