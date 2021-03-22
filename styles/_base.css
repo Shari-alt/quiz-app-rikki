@@ -105,15 +105,15 @@ a {
 }
 
 .question-card button {
-  display: block;
+   display: block;
   margin: 0 auto 15px auto;
   border-radius: 3px;
   border: 1px solid var(--button-color);
   background-color: var(--button-color);
   padding: 5px 7px;
   transition: 200ms ease-in-out;
-  box-shadow: 0 10px 13px -7px #000000;
-}
+  box-shadow: 0 10px 13px -7px #8d7878;
+} 
 
 .question-card button:hover {
   cursor: pointer;
